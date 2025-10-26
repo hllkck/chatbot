@@ -131,7 +131,7 @@ def index_data(data_file_path: str, db_dir: str):
         #st.write(f"-> {len(raw_documents)} document, {len(splits)} divided into piece.")
         
         # Vektör Veritabanı Oluşturma ve Kaydetme
-        st.warning("Vektör database is creating...")
+        st.warning("Vector database is creating...")
         vectorstore = Chroma.from_documents(
             documents=splits, 
             embedding=embeddings,
@@ -168,7 +168,7 @@ def create_rag_chain(_vectorstore: Chroma):
             | llm
             | StrOutputParser()
         )
-    #st.success("RAG Chain is installed and ready to use.")
+    st.success("RAG Chain is installed and ready to use.")
     return rag_chain
 
 # ==================================================================
@@ -225,5 +225,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
