@@ -13,8 +13,14 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
-# --- .env Dosyasını yükle ---
-load_dotenv() 
+try:
+    GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+except KeyError:
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+if not GEMINI_API_KEY:
+    st.error("ERROR: GEMINI API KEY not found. Please set it in Streamlit Secrets.")
+    st.stop()
 
 # ==================================================================
 # 0. AYARLAR
@@ -218,3 +224,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
