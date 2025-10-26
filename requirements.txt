@@ -1,0 +1,22 @@
+
+
+# LangChain Core, Google/Gemini Entegrasyonu ve Community Paketleri
+langchain-google-genai
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain
+
+
+# Vektör Veritabanı
+chromadb
+
+# Embedding Modeli (HuggingFace/Sentence Transformers)
+sentence-transformers
+
+# Ortam değişkeni yönetimi
+python-dotenv
+
+# Diğer yardımcı kütüphaneler (örnek kodda kullanılanlar)
+# Eğer bir Streamlit uygulamasına dönüştürülürse:
+streamlit

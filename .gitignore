@@ -1,0 +1,38 @@
+# .gitignore
+
+# --------------------------
+# PYTHON VE ORTAM AYARLARI
+# --------------------------
+# Python Sanal Ortamı Klasörleri
+venv/
+env/
+__pycache__/
+*.pyc
+*.o
+*.so
+
+# PIP Kurulum Dosyaları
+*.egg-info/
+.installed.cfg
+
+# --------------------------
+# LANGCHAIN / RAG AYARLARI
+# --------------------------
+# API Anahtarlarını ve Hassas Verileri İçeren Dosya
+.env
+
+
+chroma_db_streamlit/
+chroma_db/
+.chroma/
+
+# --------------------------
+# IDE/SİSTEM DOSYALARI
+# --------------------------
+.idea/             # PyCharm/IntelliJ dosyaları
+.vscode/           # VS Code ayarları
+.DS_Store          # MacOS sistem dosyaları
+Thumbs.db          # Windows önbellek dosyaları
+
+# Streamlit/Notebook Çıktıları
+.ipynb_checkpoints/
