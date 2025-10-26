@@ -87,8 +87,8 @@ Seviye bilgisinin otomatik algılanması
 
 Çoklu dil desteği
 
+Türkçe–İngilizce çeviri için iyileştirmeler
+
 ## 🚀 Demo
 Projeyi canlı olarak deneyin: [Dil Eğitmeni Chatbotu]()
 
-
-Türkçe–İngilizce çeviri için iyileştirmeler
