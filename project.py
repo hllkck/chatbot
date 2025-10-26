@@ -97,11 +97,12 @@ def index_data(data_file_path: str, db_dir: str):
             )
             # Eğer kayıt varsa, direkt yükle ve bitir.
             if vectorstore._collection.count() > 0:
-                st.info(f"Vector database loaded from disk. Total records: {vectorstore._collection.count()}")
+                #st.info(f"Vector database loaded from disk. Total records: {vectorstore._collection.count()}")
                 return vectorstore
         except Exception as e:
             # Hata oluşursa (bozuk dosya vs.), yeniden oluşturmaya geç
-            st.warning(f"Error loading ChromaDB ({e}). Rebuilding...")
+            #st.warning(f"Error loading ChromaDB ({e}). Rebuilding...")
+            pass
     
     # Eğer diskte yoksa veya bozuksa: Veri Yükleme ve Bölme
     with st.spinner("The data is being loaded, split by line, and vectorized... This may take some time."):
@@ -127,7 +128,7 @@ def index_data(data_file_path: str, db_dir: str):
         if not splits:
             raise ValueError(f"'{data_file_path}' file is empty or unreadable.")
             
-        st.write(f"-> {len(raw_documents)} document, {len(splits)} divided into piece.")
+        #st.write(f"-> {len(raw_documents)} document, {len(splits)} divided into piece.")
         
         # Vektör Veritabanı Oluşturma ve Kaydetme
         st.warning("Vektör database is creating...")
@@ -137,7 +138,7 @@ def index_data(data_file_path: str, db_dir: str):
             persist_directory=db_dir 
         )
         vectorstore.persist() 
-        st.success(f"Vector database created and saved in {db_dir} folder. Total records: {vectorstore._collection.count()}")
+        #st.success(f"Vector database created and saved in {db_dir} folder. Total records: {vectorstore._collection.count()}")
         
     return vectorstore
 
@@ -167,7 +168,7 @@ def create_rag_chain(_vectorstore: Chroma):
             | llm
             | StrOutputParser()
         )
-    st.success("RAG Chain is installed and ready to use.")
+    #st.success("RAG Chain is installed and ready to use.")
     return rag_chain
 
 # ==================================================================
@@ -224,4 +225,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
