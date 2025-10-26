@@ -6,7 +6,7 @@ langchain-community
 langchain-core
 langchain-text-splitters
 langchain
-
+langchain-huggingface  
 
 # Vektör Veritabanı
 chromadb
@@ -19,4 +19,5 @@ python-dotenv
 
 # Diğer yardımcı kütüphaneler (örnek kodda kullanılanlar)
 # Eğer bir Streamlit uygulamasına dönüştürülürse:
+
 streamlit
