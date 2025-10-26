@@ -89,6 +89,10 @@ Seviye bilgisinin otomatik algılanması
 
 Türkçe–İngilizce çeviri için iyileştirmeler
 
+## ✨ Uygulama Ekran Görüntüsü
+
+![Dil Eğitmeni Chatbotu Ekran Görüntüsü](images/screenshot.png)
+
 ## 🚀 Demo
-Projeyi canlı olarak deneyin: [Dil Eğitmeni Chatbotu]()
+Projeyi canlı olarak deneyin: [Dil Eğitmeni Chatbotu](https://chatbot-v1-0.streamlit.app/)
 
