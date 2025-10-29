@@ -40,10 +40,10 @@ Her satır, kelime, anlam ve isteğe bağlı seviye bilgisini içermelidir.
 Örnek:
 
 A1
-complete: tamamlamak [f.] / tam [s.] / bütün [s.]
+complete: tamamlamak [f.]  tam [s.]  bütün [s.]
 
 B2
-affordable: bütçeye uygun [s.] / ekonomik [s.] / düşük maliyetli [s.]
+affordable: bütçeye uygun [s.]  ekonomik [s.]  düşük maliyetli [s.]
 
 🛠️ Kullanılan Teknolojiler
 Bileşen	Teknoloji
@@ -51,6 +51,7 @@ LLM (Büyük Dil Modeli)	Google Gemini Flash
 Çerçeve	LangChain Expression Language (LCEL)
 Vektör Veritabanı	ChromaDB
 Arayüz	Streamlit
+
 🚀 Kurulum ve Çalıştırma
 
 Projeyi çalıştırmak için temel Python ortamını hazırlamanız ve API ayarlarını yapmanız gerekir.
