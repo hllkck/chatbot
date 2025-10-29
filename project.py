@@ -70,12 +70,13 @@ Soru (Question): {input}
     1. [Cümle 1]
     2. [Cümle 2]
     3. [Cümle 3]
+    
 ### 2. [Türkçe Kelime]
 - **İngilizce Anlamı:** [Anlam]
 - **Örnek Cümleler:**
     1. [Cümle 1]
     2. [Cümle 2]
-    2. [Cümle 3]
+    3. [Cümle 3]
 ***
 """
 
@@ -225,6 +226,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
