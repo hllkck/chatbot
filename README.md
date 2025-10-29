@@ -46,11 +46,8 @@ B2
 affordable: bütçeye uygun [s.]  ekonomik [s.]  düşük maliyetli [s.]
 
 🛠️ Kullanılan Teknolojiler
-Bileşen	Teknoloji
-LLM (Büyük Dil Modeli)	Google Gemini Flash
-Çerçeve	LangChain Expression Language (LCEL)
-Vektör Veritabanı	ChromaDB
-Arayüz	Streamlit
+
+LLM (Büyük Dil Modeli), Google Gemini Flash, LangChain Expression Language (LCEL), ChromaDB, Streamlit
 
 🚀 Kurulum ve Çalıştırma
 
