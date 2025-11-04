@@ -1,0 +1,25 @@
+name: Keep Streamlit Alive
+
+on:
+  schedule:
+    - cron: '0 */11 * * *'  # Her 11 saatte bir çalışır (UTC saatine göre)
+  workflow_dispatch:  # Manuel tetikleme için
+
+jobs:
+  keep_alive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Update README timestamp
+        run: |
+          echo "Last ping: $(date)" > keepalive.txt
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add keepalive.txt
+          git commit -m "Keepalive: $(date)"
+          git push
