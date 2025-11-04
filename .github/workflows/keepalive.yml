@@ -19,7 +19,7 @@ jobs:
       - name: Update keepalive file
         run: |
           echo "Last ping: $(date -u +"%Y-%m-%dT%H:%M:%SZ")" > keepalive.txt
-          git add .github/workflows/keepalive.txt
+          git add keepalive.txt
           git status --porcelain
 
       - name: Commit and push if changed
